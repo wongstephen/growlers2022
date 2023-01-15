@@ -6,11 +6,11 @@ import rehypeRaw from "rehype-raw";
 export const Events = ({ posts }) => {
   // removes expired post indicated by post.attributes.Expiration
   const unexpiredPosts = () => {
+    console.log(posts);
     return posts.filter((post) => {
       return (
-        !post.attributes.Expiration ||
-        new Date(post.attributes.Expiration).toDateString() <=
-          new Date().toDateString()
+        new Date(post.attributes.Expiration) >= new Date() ||
+        post.attributes.Expiration == null
       );
     });
   };
