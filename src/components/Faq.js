@@ -65,6 +65,11 @@ const faqs = [
     content:
       "Yes, we do! Our facility can be rented in its entirety or in designated sections for special events. If you're interested in booking a private rental, please send us an email through our contact page for more information.",
   },
+  {
+    question: "How do I access the Gingr App?",
+    content:
+      "To access the Gingr App, download it on iOS or Android, then enter the code 643286.",
+  },
 ];
 export const Faq = () => {
   return (
