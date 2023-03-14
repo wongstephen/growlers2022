@@ -42,6 +42,7 @@ export const PriceCard = ({
               href={link}
               target="_blank"
               rel="noreferrer"
+              aria-label={`Click here for more information about ${title}`}
             >
               Get Started
             </a>

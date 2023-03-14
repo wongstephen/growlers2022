@@ -8,6 +8,7 @@ export const Social = () => {
         href="https://www.facebook.com/growlerzseattle/"
         target="_blank"
         rel="noreferrer"
+        aria-aria-label="Facebook"
       >
         <svg
           className="w-6 h-auto mr-4 hover:hover:text-gray-900"
@@ -27,6 +28,7 @@ export const Social = () => {
         href="https://www.instagram.com/growlerzseattle/"
         target="_blank"
         rel="noreferrer"
+        aria-label="Instragram"
       >
         <svg
           className="w-6 h-auto mr-4 hover:hover:text-gray-900"
@@ -47,6 +49,7 @@ export const Social = () => {
         href="https://www.tiktok.com/@growlerzseattle"
         target="_blank"
         rel="noreferrer"
+        aria-label="Tik Tok"
       >
         <svg
           className="w-6 h-auto mr-4 hover:hover:text-gray-900"

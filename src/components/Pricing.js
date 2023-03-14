@@ -41,7 +41,11 @@ export const Pricing = ({ price }) => {
                 mainPrice={price.park_monthly}
                 mainPriceDesc="per month"
                 popular={false}
-                description={`Unlimited entries for one dog. Also available, yearly membership for one dog available for $${price.park_yearly}. Discounted pricing for additional dogs from the same household.`}
+                description={
+                  price.park_yearly
+                    ? `Unlimited entries for one dog. Also available, yearly membership for one dog available for $${price.park_yearly}. Discounted pricing for additional dogs from the same household.`
+                    : `Unlimited entries for one dog. Discounted pricing for additional dogs from the same household.`
+                }
                 subdescription={[``]}
                 link="https://growlerz.portal.gingrapp.com/#/secure/shop/package-retail/false/package"
               />

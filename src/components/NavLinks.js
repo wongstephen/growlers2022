@@ -12,6 +12,7 @@ export const NavLinks = ({ scollFunc, name, children, compact, closeNav }) => {
           closeNav && closeNav();
           scollFunc(e.target.name);
         }}
+        aria-label={name}
       >
         {children}
       </button>

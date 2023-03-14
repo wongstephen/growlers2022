@@ -18,8 +18,6 @@ import useFetchGraphql from "./components/hooks/useFetchGraphql";
 function App() {
   const [open, setOpen] = useState(false);
 
-  // const { data: priceData } = useFetchStrapi("price/");
-
   const {
     data: gqlData,
     error: gqlError,

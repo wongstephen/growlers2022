@@ -52,6 +52,7 @@ const useFetchGraphql = () => {
         data {
             attributes {
                 Title
+                createdAt
                 Body
                 Media {
                     data {

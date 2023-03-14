@@ -11,7 +11,7 @@ export const ToTop = () => {
     window.scrollTo(0, 0);
   };
   return (
-    <div
+    <button
       className={`fixed flex items-center justify-center w-10 h-10 bg-teal-500 rounded-full bottom-8 right-8 transition-all ${
         visible
           ? "opacity-60 translate-y-0 cursor-pointer"
@@ -19,6 +19,7 @@ export const ToTop = () => {
       }`}
       data-testid="scroll-top-btn"
       onClick={handleClick}
+      aria-label="To top of page"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -34,6 +35,6 @@ export const ToTop = () => {
           d="M4.5 15.75l7.5-7.5 7.5 7.5"
         />
       </svg>
-    </div>
+    </button>
   );
 };

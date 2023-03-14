@@ -4,15 +4,22 @@ import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 
 export const Events = ({ posts }) => {
-  // removes expired post indicated by post.attributes.Expiration
-  const unexpiredPosts = () => {
-    console.log(posts);
-    return posts.filter((post) => {
-      return (
-        new Date(post.attributes.Expiration) >= new Date() ||
-        post.attributes.Expiration == null
-      );
+  // removes expired and hoist null expireated dates to tht top
+  const filterExpired = (postData) => {
+    const today = new Date();
+    return postData.filter((post) => {
+      return new Date(post.attributes.Expiration) >= today;
     });
+  };
+  const filtereDateless = (postData) => {
+    return postData.filter((post) => {
+      return post.attributes.Expiration == null;
+    });
+  };
+  const processedEventData = () => {
+    const filteredNullDate = filtereDateless(posts);
+    const filteredEvents = filterExpired(posts);
+    return [...filteredNullDate, ...filteredEvents];
   };
 
   return (
@@ -31,12 +38,12 @@ export const Events = ({ posts }) => {
         </div>{" "}
         <div className="flex flex-wrap w-full pt-12 -mx-4 justify-lef ">
           {posts ? (
-            unexpiredPosts().map((post, idx) => (
+            processedEventData().map((post, idx) => (
               <div
                 className={
                   // If there is an odd number of post, the post will become full width.
                   `w-full md:w-1/2 px-4 mb-4 ${
-                    unexpiredPosts().length % 2 !== 0 && "md:first:w-full"
+                    processedEventData().length % 2 !== 0 && "md:first:w-full"
                   }`
                 }
                 key={idx}
@@ -84,7 +91,7 @@ export const Events = ({ posts }) => {
             ))
           ) : (
             <>
-              {Array(3)
+              {Array(2)
                 .fill("")
                 .map((obj, idx) => (
                   <EventsCardLoading key={idx} />

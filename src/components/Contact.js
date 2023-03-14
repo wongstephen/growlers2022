@@ -18,6 +18,7 @@ const Contact = () => {
                 <a
                   className="hover:text-gray-800"
                   href="mailto:growlerzseattle@gmail.com"
+                  aria-label="email growlerz"
                 >
                   growlerzseattle@gmail.com
                 </a>

@@ -50,6 +50,7 @@ export const NavCompact = ({ open, setOpen, scrollTo }) => {
                   href="https://growlerz.portal.gingrapp.com/#/public/login"
                   target="_blank"
                   rel="noreferrer"
+                  aria-label="Login to Gingr App"
                 >
                   Log In
                 </a>
@@ -60,6 +61,7 @@ export const NavCompact = ({ open, setOpen, scrollTo }) => {
                   href="https://growlerz.gingrapp.com/front_end/new_customer"
                   target="_blank"
                   rel="noreferrer"
+                  aria-label="Sign up to Gingr App"
                 >
                   Sign Up
                 </a>
@@ -73,6 +75,7 @@ export const NavCompact = ({ open, setOpen, scrollTo }) => {
           href="#"
           onClick={closeNav}
           name="closeNavAction"
+          aria-label="Close menu"
         >
           <svg
             width="12"

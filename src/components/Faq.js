@@ -9,6 +9,8 @@ const faqs = [
           class="font-bold text-teal-500"
           target="_blank"
           rel="noreferrer"
+          aria-label="Submit vaccinations"
+
         >
           here
         </a>
@@ -22,6 +24,8 @@ const faqs = [
       class="font-bold text-teal-500"
       target="_blank"
       rel="noreferrer"
+      aria-label="Submit vaccinations"
+
     >
       here
     </a>`,
