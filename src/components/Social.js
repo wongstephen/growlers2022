@@ -8,7 +8,7 @@ export const Social = () => {
         href="https://www.facebook.com/growlerzseattle/"
         target="_blank"
         rel="noreferrer"
-        aria-aria-label="Facebook"
+        aria-label="Facebook"
       >
         <svg
           className="w-6 h-auto mr-4 hover:hover:text-gray-900"
