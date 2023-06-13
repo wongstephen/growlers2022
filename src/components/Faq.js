@@ -2,6 +2,14 @@ import React from "react";
 
 const faqs = [
   {
+    question: "Do I need to register my dog to visit the play park?",
+    content: `Yes, we kindly ask all dog owners to register their pets in our online portal before visiting the play park. It helps us ensure a smooth entry process and maintain a safe environment for all.`,
+  },
+  {
+    question: "How can I register my dog online?",
+    content: `Registering your dog is quick and easy! Simply visit our online portal [<a href="https://growlerz.gingrapp.com/front_end/new_customer" target="_blank" rel="noreferrer">link</a>] and follow the step-by-step instructions to provide the necessary information and upload your dog's vaccination records.`,
+  },
+  {
     question: "Are Dog Vaccinations Required?",
     content: `Proof of current DHPP, Rabies, and Bordetella vaccinations is required prior to admission. While Bordetella vaccination does not fully eliminate the chance of getting kennel cough, it does help bolster their immunity to it. All guests are responsible for ensuring that their records are up to date. For your convenience please create a profile
         <a
