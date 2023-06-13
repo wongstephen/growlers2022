@@ -34,7 +34,7 @@ export const Services = ({ data, hours, servicesRef }) => {
                 children={hours.Park}
               />
             )} */}
-            <p className="mb-8 text-lg font-medium leading-loose text-gray-500 md:text-xl md:leading-loose">
+            <p className="mb-8 font-medium leading-loose text-gray-500 text-md md:text-xl md:leading-loose">
               Our dog-friendly park is the perfect place to bring your furry
               friend for a good run around. And now, we're excited to announce
               the opening of our new dog self-wash station! So after a fun day
@@ -58,7 +58,7 @@ export const Services = ({ data, hours, servicesRef }) => {
                 children={hours.Daycare}
               />
             )} */}
-            <p className="mb-8 text-lg font-medium leading-loose text-gray-500 md:text-xl md:leading-loose">
+            <p className="mb-8 font-medium leading-loose text-gray-500 text-md md:text-xl md:leading-loose">
               Growlerz Seattle dog park is the perfect solution for busy pet
               parents. Our experienced and loving staff will provide your furry
               family member with plenty of exercise, socialization, and care in
@@ -72,7 +72,7 @@ export const Services = ({ data, hours, servicesRef }) => {
             <p className="inline-block mb-4 text-xl text-gray-800 uppercase font-semibold tracking-[.2rem]">
               On-site Grooming
             </p>
-            <p className="mb-8 text-lg font-medium leading-loose text-gray-500 md:text-xl md:leading-loose">
+            <p className="mb-8 leading-loose text-gray-500 font-me dium text-md md:text-xl md:leading-loose">
               On-Site Grooming Now Available! Schedule your pup with our new
               groomer Brandy Robertson. Brandy has over 20 years of grooming
               experience and has been doing a magnificent job so far. Check out
@@ -88,8 +88,11 @@ export const Services = ({ data, hours, servicesRef }) => {
               .
               <br />
               <br />
-              Get scheduling and pricing info by emailing her at &nbsp;
-              <a href="mailto: brandyslovelygrooming@gmail.com">
+              Get scheduling and pricing info by emailing her at&#160;
+              <a
+                href="mailto: brandyslovelygrooming@gmail.com"
+                className="text-teal-500 hover:text-teal-500"
+              >
                 brandyslovelygrooming@gmail.com
               </a>
             </p>
@@ -99,7 +102,7 @@ export const Services = ({ data, hours, servicesRef }) => {
             <p className="inline-block mb-4 text-xl text-gray-800 uppercase font-semibold tracking-[.2rem]">
               Taproom
             </p>
-            <p className="mb-8 text-lg font-medium leading-loose text-gray-500 md:text-xl md:leading-loose">
+            <p className="mb-8 font-medium leading-loose text-gray-500 text-md md:text-xl md:leading-loose">
               Growlerz Taproom is the perfect spot to unwind with friends, both
               human and furry. With 8 delicious craft beers on tap and plenty of
               seating, you can stay for a while or just grab a quick drink.
