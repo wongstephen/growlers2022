@@ -19,22 +19,26 @@ export const Welcome = ({ hours }) => {
               Pup!
             </p>
 
-            <p className="text-sm">Play Park Hours</p>
             {hours && (
-              <ReactMarkdown
-                className="mb-4 text-xs font-medium leading-tight text-gray-800 whitespace-pre-line md:text-base md:leading-normal"
-                rehypePlugins={[rehypeRaw]}
-                children={hours.Park}
-              />
+              <>
+                <p className="text-sm">Play Park Hours</p>
+                <ReactMarkdown
+                  className="mb-4 text-xs font-medium leading-tight text-gray-800 whitespace-pre-line md:text-base md:leading-normal"
+                  rehypePlugins={[rehypeRaw]}
+                  children={hours.Park}
+                />
+              </>
             )}
 
-            <p className="text-sm">Day Care Hours</p>
             {hours && (
-              <ReactMarkdown
-                className="mb-4 text-xs font-medium leading-tight text-gray-800 whitespace-pre-line md:text-base md:leading-normal"
-                rehypePlugins={[rehypeRaw]}
-                children={hours.Daycare}
-              />
+              <>
+                <p className="text-sm">Day Care Hours</p>
+                <ReactMarkdown
+                  className="mb-4 text-xs font-medium leading-tight text-gray-800 whitespace-pre-line md:text-base md:leading-normal"
+                  rehypePlugins={[rehypeRaw]}
+                  children={hours.Daycare}
+                />
+              </>
             )}
 
             <p className="mb-8 font-normal leading-loose text-gray-500 text-md md:text-2xl md:leading-loose">
