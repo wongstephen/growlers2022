@@ -68,11 +68,6 @@ const faqs = [
       "We are a 21 and older business and do not allow anyone under the age of 21, including babies. This is in accordance with state law.",
   },
   {
-    question: "Do I need a dog for entry?",
-    content:
-      "Growlerz is a great place for guests to exercise their dogs, and you are welcome to come in and watch the dogs play, too. If you're feeling thirsty, you can grab a beer at the park and enjoy it while you watch the pups. We also offer growler fills to go, so you can take some of your favorite beer with you when you leave. Just remember to drink responsibly and always supervise your dog while at the park.",
-  },
-  {
     question: "Do you offer private rentals?",
     content:
       "Yes, we do! Our facility can be rented in its entirety or in designated sections for special events. If you're interested in booking a private rental, please send us an email through our contact page for more information.",
