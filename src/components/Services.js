@@ -67,36 +67,7 @@ export const Services = ({ data, hours, servicesRef }) => {
             </p>
             <DayCare dayCareRef={dayCareRef} />
           </div>
-          {/* Grooming */}
-          <div className="my-16">
-            <p className="inline-block mb-4 text-xl text-gray-800 uppercase font-semibold tracking-[.2rem]">
-              On-site Grooming
-            </p>
-            <p className="mb-8 leading-loose text-gray-500 font-me dium text-md md:text-xl md:leading-loose">
-              On-Site Grooming Now Available! Schedule your pup with our new
-              groomer Brandy Robertson. Brandy has over 20 years of grooming
-              experience and has been doing a magnificent job so far. Check out
-              her grooming pics on Instagram{" "}
-              <a
-                href="https://www.instagram.com/brandyslovelygrooms/"
-                target="_blank"
-                rel="noreferrer"
-                className="text-teal-500 hover:text-teal-600"
-              >
-                @brendyslovelygrooms
-              </a>
-              .
-              <br />
-              <br />
-              Get scheduling and pricing info by emailing her at&#160;
-              <a
-                href="mailto: brandyslovelygrooming@gmail.com"
-                className="text-teal-500 hover:text-teal-500"
-              >
-                brandyslovelygrooming@gmail.com
-              </a>
-            </p>
-          </div>
+
           {/* Taproom */}
           <div className="my-16">
             <p className="inline-block mb-4 text-xl text-gray-800 uppercase font-semibold tracking-[.2rem]">
