@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
 import { DayCare } from "./DayCare";
 import { PlayPark } from "./PlayPark";
-import ReactMarkdown from "react-markdown";
-import rehypeRaw from "rehype-raw";
+// import ReactMarkdown from "react-markdown";
+// import rehypeRaw from "rehype-raw";
 
 export const Services = ({ data, hours, servicesRef }) => {
   const playParkRef = useRef();
@@ -27,19 +27,22 @@ export const Services = ({ data, hours, servicesRef }) => {
             <p className="inline-block mb-4 text-xl text-gray-800 uppercase font-semibold tracking-[.2rem]">
               Play Park
             </p>
-            {hours && (
+            {/* {hours && (
               <ReactMarkdown
                 className="mb-8 text-sm font-medium leading-tight text-gray-800 whitespace-pre-line md:text-base md:leading-normal"
                 rehypePlugins={[rehypeRaw]}
                 children={hours.Park}
               />
-            )}
-            <p className="mb-8 text-lg font-medium leading-loose text-gray-500 md:text-xl md:leading-loose">
+            )} */}
+            <p className="mb-8 font-medium leading-loose text-gray-500 text-md md:text-xl md:leading-loose">
               Our dog-friendly park is the perfect place to bring your furry
               friend for a good run around. And now, we're excited to announce
               the opening of our new dog self-wash station! So after a fun day
               at the park, your dog can get cleaned up and ready for the ride
-              home.
+              home. To ensure a safe and enjoyable experience for everyone, we
+              kindly request that all dogs visiting the play park be registered
+              in our convenient online portal and have up-to-date vaccinations
+              prior to entry.
             </p>
             <PlayPark playParkRef={playParkRef} />
           </div>
@@ -48,14 +51,14 @@ export const Services = ({ data, hours, servicesRef }) => {
             <p className="inline-block mb-4 text-xl text-gray-800 uppercase font-semibold tracking-[.2rem]">
               Day Care
             </p>
-            {hours && (
+            {/* {hours && (
               <ReactMarkdown
                 className="mb-8 text-sm font-medium leading-tight text-gray-800 whitespace-pre-line md:text-base md:leading-normal"
                 rehypePlugins={[rehypeRaw]}
                 children={hours.Daycare}
               />
-            )}
-            <p className="mb-8 text-lg font-medium leading-loose text-gray-500 md:text-xl md:leading-loose">
+            )} */}
+            <p className="mb-8 font-medium leading-loose text-gray-500 text-md md:text-xl md:leading-loose">
               Growlerz Seattle dog park is the perfect solution for busy pet
               parents. Our experienced and loving staff will provide your furry
               family member with plenty of exercise, socialization, and care in
@@ -64,12 +67,13 @@ export const Services = ({ data, hours, servicesRef }) => {
             </p>
             <DayCare dayCareRef={dayCareRef} />
           </div>
+
           {/* Taproom */}
           <div className="my-16">
             <p className="inline-block mb-4 text-xl text-gray-800 uppercase font-semibold tracking-[.2rem]">
               Taproom
             </p>
-            <p className="mb-8 text-lg font-medium leading-loose text-gray-500 md:text-xl md:leading-loose">
+            <p className="mb-8 font-medium leading-loose text-gray-500 text-md md:text-xl md:leading-loose">
               Growlerz Taproom is the perfect spot to unwind with friends, both
               human and furry. With 8 delicious craft beers on tap and plenty of
               seating, you can stay for a while or just grab a quick drink.

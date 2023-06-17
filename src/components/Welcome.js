@@ -1,6 +1,8 @@
 import React from "react";
+import ReactMarkdown from "react-markdown";
+import rehypeRaw from "rehype-raw";
 
-export const Welcome = () => {
+export const Welcome = ({ hours }) => {
   return (
     <div className="py-8 md:py-12 lg:py-16" data-testid="section-1">
       <div className="container px-6 mx-auto">
@@ -16,6 +18,29 @@ export const Welcome = () => {
               The Ultimate Dog Park Experience - Beers on Tap, and Fun for Your
               Pup!
             </p>
+
+            {hours && (
+              <>
+                <p className="text-sm">Play Park Hours</p>
+                <ReactMarkdown
+                  className="mb-4 text-xs font-medium leading-tight text-gray-800 whitespace-pre-line md:text-base md:leading-normal"
+                  rehypePlugins={[rehypeRaw]}
+                  children={hours.Park}
+                />
+              </>
+            )}
+
+            {hours && (
+              <>
+                <p className="text-sm">Day Care Hours</p>
+                <ReactMarkdown
+                  className="mb-4 text-xs font-medium leading-tight text-gray-800 whitespace-pre-line md:text-base md:leading-normal"
+                  rehypePlugins={[rehypeRaw]}
+                  children={hours.Daycare}
+                />
+              </>
+            )}
+
             <p className="mb-8 font-normal leading-loose text-gray-500 text-md md:text-2xl md:leading-loose">
               <span className="text-teal-500">
                 5269 Rainier Ave. S, Seattle, WA

@@ -59,7 +59,7 @@ function App() {
         {gqlData?.alert?.data && (
           <Alert data={gqlData?.alert?.data?.attributes} />
         )}
-        <Welcome />
+        <Welcome hours={gqlData?.businessHour?.data?.attributes} />
       </header>
       <main>
         <span ref={servicesRef}>

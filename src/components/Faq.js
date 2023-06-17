@@ -2,6 +2,14 @@ import React from "react";
 
 const faqs = [
   {
+    question: "Do I need to register my dog to visit the play park?",
+    content: `Yes, we kindly ask all dog owners to register their pets in our online portal before visiting the play park. It helps us ensure a smooth entry process and maintain a safe environment for all.`,
+  },
+  {
+    question: "How can I register my dog online?",
+    content: `Registering your dog is quick and easy! Simply visit our online portal [<a href="https://growlerz.gingrapp.com/front_end/new_customer" target="_blank" rel="noreferrer">link</a>] and follow the step-by-step instructions to provide the necessary information and upload your dog's vaccination records.`,
+  },
+  {
     question: "Are Dog Vaccinations Required?",
     content: `Proof of current DHPP, Rabies, and Bordetella vaccinations is required prior to admission. While Bordetella vaccination does not fully eliminate the chance of getting kennel cough, it does help bolster their immunity to it. All guests are responsible for ensuring that their records are up to date. For your convenience please create a profile
         <a
@@ -58,11 +66,6 @@ const faqs = [
     question: "Do you allow kids?",
     content:
       "We are a 21 and older business and do not allow anyone under the age of 21, including babies. This is in accordance with state law.",
-  },
-  {
-    question: "Do I need a dog for entry?",
-    content:
-      "Growlerz is a great place for guests to exercise their dogs, and you are welcome to come in and watch the dogs play, too. If you're feeling thirsty, you can grab a beer at the park and enjoy it while you watch the pups. We also offer growler fills to go, so you can take some of your favorite beer with you when you leave. Just remember to drink responsibly and always supervise your dog while at the park.",
   },
   {
     question: "Do you offer private rentals?",
