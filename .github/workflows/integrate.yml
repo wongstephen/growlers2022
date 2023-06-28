@@ -1,4 +1,4 @@
-NAME: GROWLERS CI
+name: GROWLERS CI
 
 on:
   pull_request:
