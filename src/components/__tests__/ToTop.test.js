@@ -10,14 +10,5 @@ const noop = () => {};
 Object.defineProperty(window, "scrollTo", { value: noop, writable: true });
 
 describe("Test top button", () => {
-  it.todo(
-    "Button click scrolls to top"
-
-    // , () => {
-    //   render(<ToTop />);
-    //   const buttonElement = screen.getByTestId("scroll-top-btn");
-    //   fireEvent.click(buttonElement);
-    //   // expect(window.scrollTo).toHaveBeenCalled(0, 0);
-    // }
-  );
+  it.todo("Button click scrolls to top");
 });
