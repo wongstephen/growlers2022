@@ -20,8 +20,8 @@ function App() {
 
   const {
     data: gqlData,
-    error: gqlError,
-    loading: gqlLoading,
+    // error: gqlError,
+    // loading: gqlLoading,
   } = useFetchGraphql();
 
   const servicesRef = useRef();
