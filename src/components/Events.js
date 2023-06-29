@@ -68,7 +68,7 @@ export const Events = ({ posts }) => {
                           post.attributes.Media.data.attributes.formats.small
                             .url
                         }
-                        alt="Event and annoucement img"
+                        alt={`${post.attributes.Title} alt`}
                       />
                     )}
                     {!post?.attributes?.Media?.data?.attributes?.formats?.small
@@ -82,7 +82,7 @@ export const Events = ({ posts }) => {
                             post.attributes.Media.data.attributes.formats
                               .thumbnail.url
                           }
-                          alt="Event and annoucement img"
+                          alt="Event Loading"
                         />
                       )}
                   </div>

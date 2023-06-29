@@ -27,7 +27,12 @@ export const NavFull = ({ setOpen, scrollTo }) => {
             <ul className="hidden xl:flex xl:justify-center [&>*]:mr-12">
               {navLinkData.map((obj, idx) => {
                 return (
-                  <NavLinks scollFunc={scrollTo} name={obj.ref} key={idx}>
+                  <NavLinks
+                    scollFunc={scrollTo}
+                    name={obj.ref}
+                    key={idx}
+                    test={obj.test}
+                  >
                     {obj.title}
                   </NavLinks>
                 );

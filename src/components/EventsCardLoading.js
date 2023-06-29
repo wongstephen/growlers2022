@@ -2,7 +2,10 @@ import React from "react";
 
 export const EventsCardLoading = () => {
   return (
-    <div className="flex flex-col max-w-4xl pt-12 -mx-4 animate-pulse">
+    <div
+      className="flex flex-col max-w-4xl pt-12 -mx-4 animate-pulse"
+      data-testid="events-card-loading"
+    >
       <div className="w-full px-4 mb-4 md:w-full">
         <div className="h-full group">
           <div className="relative h-full px-8 pt-16 pb-8 transition duration-200 bg-white rounded-md shadow-md group group-hover:bg-trasnparent hover:shadow-xl">
