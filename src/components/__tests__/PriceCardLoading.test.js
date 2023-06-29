@@ -18,5 +18,4 @@ describe("tests for Price Card Loading Skeleton", () => {
     const textElement = screen.getByText("Title");
     expect(textElement).toHaveClass("invisible");
   });
-
 });

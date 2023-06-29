@@ -1,8 +1,6 @@
 import React, { useRef } from "react";
 import { DayCare } from "./DayCare";
 import { PlayPark } from "./PlayPark";
-// import ReactMarkdown from "react-markdown";
-// import rehypeRaw from "rehype-raw";
 
 export const Services = ({ data, hours, servicesRef }) => {
   const playParkRef = useRef();
@@ -13,6 +11,7 @@ export const Services = ({ data, hours, servicesRef }) => {
       id="services"
       className="relative max-w-5xl py-24 mx-auto overflow-hidden md:pb-32 bg-trasnparent"
       ref={servicesRef}
+      data-testid="services-section"
     >
       <div className="container relative px-4 mx-auto">
         <div className="mx-auto text-left mb-18 md:mb-16">
@@ -27,13 +26,6 @@ export const Services = ({ data, hours, servicesRef }) => {
             <p className="inline-block mb-4 text-xl text-gray-800 uppercase font-semibold tracking-[.2rem]">
               Play Park
             </p>
-            {/* {hours && (
-              <ReactMarkdown
-                className="mb-8 text-sm font-medium leading-tight text-gray-800 whitespace-pre-line md:text-base md:leading-normal"
-                rehypePlugins={[rehypeRaw]}
-                children={hours.Park}
-              />
-            )} */}
             <p className="mb-8 font-medium leading-loose text-gray-500 text-md md:text-xl md:leading-loose">
               Our dog-friendly park is the perfect place to bring your furry
               friend for a good run around. And now, we're excited to announce
@@ -51,13 +43,6 @@ export const Services = ({ data, hours, servicesRef }) => {
             <p className="inline-block mb-4 text-xl text-gray-800 uppercase font-semibold tracking-[.2rem]">
               Day Care
             </p>
-            {/* {hours && (
-              <ReactMarkdown
-                className="mb-8 text-sm font-medium leading-tight text-gray-800 whitespace-pre-line md:text-base md:leading-normal"
-                rehypePlugins={[rehypeRaw]}
-                children={hours.Daycare}
-              />
-            )} */}
             <p className="mb-8 font-medium leading-loose text-gray-500 text-md md:text-xl md:leading-loose">
               Growlerz Seattle dog park is the perfect solution for busy pet
               parents. Our experienced and loving staff will provide your furry
@@ -67,7 +52,6 @@ export const Services = ({ data, hours, servicesRef }) => {
             </p>
             <DayCare dayCareRef={dayCareRef} />
           </div>
-
           {/* Taproom */}
           <div className="my-16">
             <p className="inline-block mb-4 text-xl text-gray-800 uppercase font-semibold tracking-[.2rem]">

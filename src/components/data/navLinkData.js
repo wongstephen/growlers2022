@@ -1,7 +1,7 @@
 export const navLinkData = [
-  { title: "Service", ref: "servicesRef" },
-  { title: "Pricing", ref: "pricingRef" },
-  { title: "Events", ref: "eventsRef" },
-  { title: "FAQ", ref: "faqRef" },
-  { title: "Contact", ref: "contactRef" },
+  { title: "Services", ref: "servicesRef", test: "servicesTest" },
+  { title: "Pricing", ref: "pricingRef", test: "pricingTest" },
+  { title: "Events", ref: "eventsRef", test: "eventsTest" },
+  { title: "FAQ", ref: "faqRef", test: "faqTest" },
+  { title: "Contact", ref: "contactRef", test: "contactTest" },
 ];
