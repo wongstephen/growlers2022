@@ -4,7 +4,7 @@ import rehypeRaw from "rehype-raw";
 
 export const Welcome = ({ hours }) => {
   return (
-    <div className="py-8 md:py-12 lg:py-16" data-testid="section-1">
+    <div className="py-8 md:py-12 lg:py-16" data-testid="welcome-section">
       <div className="container px-6 mx-auto">
         <div className="relative z-10 -mx-2 md:flex-wrap md:flex md:flex-row">
           <div className="w-full mb-12 md:w-1/2 md:mb-0 md:rounded-lg">

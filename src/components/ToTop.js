@@ -17,7 +17,7 @@ export const ToTop = () => {
           ? "opacity-60 translate-y-0 cursor-pointer"
           : "opacity-0 translate-y-2 pointer-events-none"
       }`}
-      data-testid="scroll-top-btn"
+      data-testid="toTop-component"
       onClick={handleClick}
       aria-label="To top of page"
     >

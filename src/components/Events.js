@@ -26,6 +26,7 @@ export const Events = ({ posts }) => {
     <section
       id="events"
       className="max-w-5xl py-24 mx-auto bg-transparent md:pt-32"
+      data-testid="events-section"
     >
       <div className="container px-4 mx-auto">
         <div className="text-left">

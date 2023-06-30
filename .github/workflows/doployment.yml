@@ -24,4 +24,3 @@ jobs:
             sudo git pull
             sudo npm i
             sudo npm run build
-            pm2 restart all
