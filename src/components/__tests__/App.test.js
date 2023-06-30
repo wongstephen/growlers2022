@@ -23,5 +23,5 @@ describe("App", () => {
     expect(screen.getByTestId("toTop-component")).toBeInTheDocument();
   });
 
-  // Add more tests if needed
+
 });
