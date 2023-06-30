@@ -85,6 +85,7 @@ export const Faq = () => {
       <section
         id="faq"
         className="max-w-5xl py-24 mx-auto bg-transparent md:pt-32"
+        data-testid="faq-section"
       >
         <div className="container px-4 mx-auto">
           <div className="text-left">

@@ -14,8 +14,10 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 import useFetchGraphql from "./components/hooks/useFetchGraphql";
+import { Route, Routes } from "react-router-dom";
+import ErrorPage from "./components/ErrorPage";
 
-function App() {
+const Home = () => {
   const [open, setOpen] = useState(false);
 
   const {
@@ -50,7 +52,6 @@ function App() {
         break;
     }
   };
-
   return (
     <div className="antialiased bg-body text-body font-body bg">
       <header className="relative mx-auto overflow-hidden max-w-7xl">
@@ -86,6 +87,15 @@ function App() {
       </footer>
       <ToTop />
     </div>
+  );
+};
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="*" element={<ErrorPage />} />
+    </Routes>
   );
 }
 

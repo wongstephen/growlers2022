@@ -7,7 +7,11 @@ import rehypeRaw from "rehype-raw";
 
 const Footer = ({ hours, scrollTo }) => {
   return (
-    <section id="footer" className="mx-auto bg-trasnparent max-w-7xl">
+    <section
+      id="footer"
+      className="mx-auto bg-trasnparent max-w-7xl"
+      data-testid="footer-section"
+    >
       <div className="container px-4 mx-auto">
         <div className="flex flex-wrap pt-24 pb-12 -mx-4">
           <div className="w-full px-4 mb-16 md:w-1/2 lg:w-4/12 lg:mb-0">
