@@ -62,6 +62,7 @@ const useFetchGraphql = () => {
                     }
                 }
                 Expiration
+                EventDate
             }
         }
     }
