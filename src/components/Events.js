@@ -4,7 +4,7 @@ import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 
 export const Events = ({ posts }) => {
-  // removes expired and hoist null expireated dates to tht top
+  // removes expired and hoist null expireated dates to the top
   const filterExpired = (postData) => {
     const today = new Date();
     return postData.filter((post) => {
@@ -19,7 +19,12 @@ export const Events = ({ posts }) => {
   const processedEventData = () => {
     const filteredNullDate = filtereDateless(posts);
     const filteredEvents = filterExpired(posts);
-    return [...filteredNullDate, ...filteredEvents];
+    const sortedEvents = filteredEvents.sort((a, b) => {
+      const aDate = new Date(a.attributes.EventDate);
+      const bDate = new Date(b.attributes.EventDate);
+      return aDate - bDate;
+    });
+    return [...filteredNullDate, ...sortedEvents];
   };
 
   return (
@@ -36,7 +41,7 @@ export const Events = ({ posts }) => {
           <h3 className="mb-6 text-3xl font-bold leading-snug tracking-tight text-gray-900 md:text-5xl lg:text-7xl md:leading-snug lg:leading-snug">
             News and Events
           </h3>
-        </div>{" "}
+        </div>
         <div className="flex flex-wrap w-full pt-12 -mx-4 justify-lef ">
           {posts ? (
             processedEventData().map((post, idx) => (
