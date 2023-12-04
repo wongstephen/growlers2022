@@ -1,6 +1,6 @@
 import clsx from "clsx";
 
-export default function ServiceCard({
+export function ServiceCard({
   title,
   description,
   forwardRef,

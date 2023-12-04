@@ -1,9 +1,10 @@
 import React, { useRef } from "react";
 import { DayCare } from "./DayCare";
 import { PlayPark } from "./PlayPark";
-import ServiceCard from "./ServiceCard";
-import { services } from "../utils/constants";
+import { ServiceCard } from "./ServiceCard";
 import { SectionContainer } from "./elements/SectionContainer";
+import parkImg from "../assets/park.webp";
+import { services } from "../utils/constants";
 
 export const Services = () => {
   const playParkRef = useRef();
@@ -14,6 +15,7 @@ export const Services = () => {
       sectionId={services.section.sectionId}
       titleTextH1={services.section.title}
       titleTextH4={services.section.subtitle}
+      data-testid="services-section"
     >
       <div className="container relative px-4 mx-auto">
         <div className="mx-auto text-left mb-18 md:mb-16">
@@ -39,7 +41,7 @@ export const Services = () => {
         <div className="relative max-w-full mx-auto mt-4">
           <img
             className="relative mx-auto border-2 border-teal-100 rounded-tl-3xl rounded-br-3xl"
-            src={require("../assets/park.webp")}
+            src={parkImg}
             alt="Growlerz Park"
           />
         </div>
