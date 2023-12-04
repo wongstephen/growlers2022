@@ -5,15 +5,15 @@ import ServiceCard from "./ServiceCard";
 import { services } from "../utils/constants";
 import { SectionContainer } from "./elements/SectionContainer";
 
-export const Services = ({ data, hours, servicesRef }) => {
+export const Services = () => {
   const playParkRef = useRef();
   const dayCareRef = useRef();
 
   return (
     <SectionContainer
-      sectionId="section"
-      titleTextH1=" Enjoy the Best of Seattle with Your Furry Friend at Growlerz"
-      titleTextH4="services"
+      sectionId={services.section.sectionId}
+      titleTextH1={services.section.title}
+      titleTextH4={services.section.subtitle}
     >
       <div className="container relative px-4 mx-auto">
         <div className="mx-auto text-left mb-18 md:mb-16">

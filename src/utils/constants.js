@@ -1,4 +1,9 @@
 export const services = {
+  section: {
+    title: "Enjoy the Best of Seattle with Your Furry Friend at Growlerz",
+    subtitle: "services",
+    sectionId: "services",
+  },
   dayCare: {
     title: "Day Care",
     description:
