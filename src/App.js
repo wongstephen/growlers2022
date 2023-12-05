@@ -54,12 +54,12 @@ const Home = () => {
   };
   return (
     <div className="antialiased bg-body text-body font-body bg">
-      <header className="relative mx-auto overflow-hidden max-w-7xl">
-        <NavFull setOpen={setOpen} open={open} scrollTo={scrollTo} />
-        <NavCompact setOpen={setOpen} open={open} scrollTo={scrollTo} />
+      <header className="relative mx-auto max-w-7xl">
         {gqlData?.alert?.data && (
           <Alert data={gqlData?.alert?.data?.attributes} />
         )}
+        <NavFull setOpen={setOpen} open={open} scrollTo={scrollTo} />
+        <NavCompact setOpen={setOpen} open={open} scrollTo={scrollTo} />
         <Welcome hours={gqlData?.businessHour?.data?.attributes} />
       </header>
       <main>
