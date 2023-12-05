@@ -2,7 +2,7 @@ name: GROWLERS CI
 
 on:
   pull_request:
-    branches: [main]
+    branches: "*"
 
 jobs:
   test_pull_request:
