@@ -7,20 +7,22 @@ export const NavLinks = ({
   compact,
   test,
   closeNav,
+  navRef,
 }) => {
   return (
     <li>
       <button
-        className={`text-gray-500 font-medium cursor-pointer hover:text-gray-900 ${
-          compact && "block px-4 py-3 rounded-md hover:bg-gray-50"
+        className={`text-gray-600 font-medium cursor-pointer hover:text-gray-900 ${
+          compact && "block  hover:bg-gray-50"
         }`}
-        name={name}
+        name={navRef}
         onClick={(e) => {
           closeNav && closeNav();
           scollFunc(e.target.name);
         }}
         aria-label={name}
         data-testid={test}
+        title={name}
       >
         {children}
       </button>

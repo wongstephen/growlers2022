@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import "./App.css";
 
-import { Welcome } from "./components/Welcome";
+import { Hero } from "./components/Hero";
 import { NavCompact } from "./components/NavCompact";
 import { NavFull } from "./components/NavFull";
 import { Services } from "./components/Services";
@@ -53,16 +53,16 @@ const Home = () => {
     }
   };
   return (
-    <div className="antialiased bg-body text-body font-body bg">
-      <header className="relative mx-auto max-w-7xl">
+    <div className="grid gap-4 mx-auto antialiased md:gap-8 max-w-7xl bg-body text-body font-body">
+      <header>
         {gqlData?.alert?.data && (
           <Alert data={gqlData?.alert?.data?.attributes} />
         )}
         <NavFull setOpen={setOpen} open={open} scrollTo={scrollTo} />
         <NavCompact setOpen={setOpen} open={open} scrollTo={scrollTo} />
-        <Welcome hours={gqlData?.businessHour?.data?.attributes} />
       </header>
       <main>
+        <Hero hours={gqlData?.businessHour?.data?.attributes} />
         <span ref={servicesRef}>
           <Services hours={gqlData?.businessHour?.data?.attributes} />
         </span>

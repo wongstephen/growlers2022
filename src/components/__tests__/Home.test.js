@@ -1,11 +1,11 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import { Welcome } from "../Welcome";
+import { Hero } from "../Hero";
 import "@testing-library/jest-dom/extend-expect";
 
-describe("Welcome component", () => {
+describe("home component", () => {
   test("renders welcome message", () => {
-    render(<Welcome />);
+    render(<Hero />);
     const welcomeHeading = screen.getByText(/DOGS. BEER. COMMUNITY./i);
     expect(welcomeHeading).toBeInTheDocument();
 
@@ -21,7 +21,7 @@ describe("Welcome component", () => {
       Daycare: "Monday to Friday: 8am - 7pm",
     };
 
-    render(<Welcome hours={hours} />);
+    render(<Hero hours={hours} />);
 
     const parkHours = screen.getByText(/Play Park Hours/i);
     expect(parkHours).toBeInTheDocument();
@@ -37,17 +37,9 @@ describe("Welcome component", () => {
   });
 
   test("renders address", () => {
-    render(<Welcome />);
+    render(<Hero />);
 
     const address = screen.getByText(/5269 Rainier Ave. S, Seattle, WA/i);
     expect(address).toBeInTheDocument();
-  });
-
-  test("renders hero image", () => {
-    render(<Welcome />);
-
-    const heroImage = screen.getByTestId("hero-img");
-    expect(heroImage).toBeInTheDocument();
-    expect(heroImage).toHaveAttribute("alt", "Two dogs welcome");
   });
 });

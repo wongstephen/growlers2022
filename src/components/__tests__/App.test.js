@@ -14,7 +14,7 @@ describe("App", () => {
 
     // Check if the components are rendered
     expect(screen.queryByText(/error 404/i)).not.toBeInTheDocument();
-    expect(screen.getByTestId("welcome-section")).toBeInTheDocument();
+    expect(screen.getByTestId("hero-section")).toBeInTheDocument();
     expect(screen.getByTestId("services-section")).toBeInTheDocument();
     expect(screen.getByTestId("events-section")).toBeInTheDocument();
     expect(screen.getByTestId("faq-section")).toBeInTheDocument();
@@ -22,6 +22,4 @@ describe("App", () => {
     expect(screen.getByTestId("footer-section")).toBeInTheDocument();
     expect(screen.getByTestId("toTop-component")).toBeInTheDocument();
   });
-
-
 });
