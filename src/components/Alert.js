@@ -5,7 +5,7 @@ export const Alert = ({ data }) => {
     <section
       id="alert"
       data-testid="alert-section"
-      className="text-white bg-teal-800 full-width"
+      className="text-white bg-teal-700 border-b-4 border-teal-700 full-width"
     >
       <div className="gap-2 px-4 py-2 mx-auto text-center text-balance">
         <p

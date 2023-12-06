@@ -13,13 +13,22 @@
     @apply text-base font-semibold tracking-wider text-gray-900 uppercase font-instrument-sans;
   }
   .full-width {
-    left: calc(-50vw + 50%);
     width: 100vw;
     position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
   }
-  .text-balance {
-    text-wrap: balance;
+  .full-width-reset {
+    left: unset;
+    width: unset;
+    position: unset;
   }
+}
+
+* {
+  text-wrap: balance;
 }
 
 .bg {
