@@ -4,6 +4,12 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Instrument+Sans:wght@400;500;700&family=Unbounded:wght@400;500;700&display=swap");
 
+@layer base {
+  * {
+    text-wrap: balance;
+  }
+}
+
 @layer components {
   .text-default {
     /* @apply text-base tracking-wide text-justify text-gray-900 font-instrument-sans; */
@@ -21,14 +27,13 @@
     margin-right: -50vw;
   }
   .full-width-reset {
-    left: unset;
     width: unset;
     position: unset;
+    left: unset;
+    right: unset;
+    margin-left: unset;
+    margin-right: unset;
   }
-}
-
-* {
-  text-wrap: balance;
 }
 
 .bg {
