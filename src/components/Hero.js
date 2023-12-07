@@ -5,7 +5,7 @@ import heroImg from "../assets/welcome-hero.jpg";
 
 export const Hero = ({ hours }) => {
   return (
-    <div data-testid="hero-section" className="grid gap-4 md:gap-12">
+    <div data-testid="hero-section" className="grid gap-4 md:gap-16">
       <div className="flex flex-col items-center gap-2 px-4 md:gap-8 md:flex-row xl:p-0">
         <div>
           <img
@@ -56,7 +56,7 @@ export const Hero = ({ hours }) => {
         </div>
 
         <div
-          className="relative w-full h-48 bg-red-500 bg-center bg-cover rounded-lg md:h-full"
+          className="relative w-full bg-red-500 bg-center bg-cover rounded-lg md:min-h-[22rem] h-72"
           style={{
             backgroundImage: `url(${heroImg})`,
           }}
